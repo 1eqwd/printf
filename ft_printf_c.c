@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_num.c                                   :+:      :+:    :+:   */
+/*   ft_printf_c.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sumedai <sumedai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/04 22:39:16 by sumedai           #+#    #+#             */
-/*   Updated: 2024/08/05 01:03:16 by sumedai          ###   ########.fr       */
+/*   Created: 2024/08/04 21:00:17 by sumedai           #+#    #+#             */
+/*   Updated: 2024/08/05 00:15:55 by sumedai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int ft_putchar_num(const char c)
+int ft_printf_c(int c)
 {
     int ret;
     
     ret = 0;
-    ret += write(1, &c, 1);
+    ret += ft_putchar_num_c(c);
     return (ret);
 }
-
-// int main(void)
-// {
-//     printf("%s %d\n", "a");
-//     return(0);
-// }
