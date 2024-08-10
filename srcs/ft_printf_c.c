@@ -10,13 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int ft_printf_c(int c)
 {
     int ret;
-    
+
     ret = 0;
-    ret += ft_putchar_num_c(c);
+    ret += ft_numchar(c);
     return (ret);
 }
+
+// int main(void)
+// {
+//     char c = 'f';
+//     printf("\n%d\n", ft_printf_c(c));
+//     return(0);
+// }

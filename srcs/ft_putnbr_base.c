@@ -10,28 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int ft_putnbr_base(long long num,char *base)
+int ft_putnbr_base(long long num, char *base)
 {
     int         ret;
     long long   base_len;
     
     ret = 0;
-    base_len = (long long)ft_strlen(base);
+    base_len = (long long)strlen(base);
     if (num < 0)
     {
-        ret += ft_putchar_num('-');
+        ret += ft_numchar('-');
         num *= -1;
     }
     if (num >= base_len)
         ret += ft_putnbr_base(num / base_len, base);
-    ret += ft_putchar_num(base[num % base_len]);
+    ret += ft_numchar(base[num % base_len]);
     return (ret);
 }
 
-int main(void)
-{
-    printf("%d\n", ft_putnbr_base(23445,"0123456789"));
-    return (0);
-}
+// int main(void)
+// {
+//     printf("%d\n", ft_putnbr_base(23445,"0123456789"));
+//     return (0);
+// }

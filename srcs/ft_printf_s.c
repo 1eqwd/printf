@@ -10,22 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int ft_printf_s(const char *s)
+int ft_printf_s(char *s)
 {
     int ret;
     
     ret = 0;
     if (s == NULL)
         s = "(null)";
-    ret = ft_putstr_num(s);
+    ret += ft_numstr(s);
+    if  (ret == -1)
+        return (-1);
     return (ret);
 }
 
 // int main(void)
 // {
-//     int i = ft_printf_s("fadas");
-//     printf("%d\n",i);
+//     char *c = NULL;
+//     int i = printf("%s",c);
+//     int j = ft_printf_s(c);
+//     printf("\n%d %d\n", i,j);
 //     return (0);
 // }

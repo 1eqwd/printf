@@ -10,14 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int ft_putchar_num(const char c)
+int ft_numchar(const char c)
 {
     int ret;
     
     ret = 0;
     ret += write(1, &c, 1);
+    if(ret == -1)
+        return(-1);
     return (ret);
 }
 
