@@ -32,6 +32,7 @@ static int ft_specifier(const char *fmt, va_list ap)
         return (ft_printf_p(va_arg(ap, unsigned long long))); /*OK*/
     if (*fmt == '%')
         return (ft_numchar('%'));
+    return (0);
 }
 
 static int ft_putstr_n(const char *str,int start, char c)

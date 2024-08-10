@@ -1,10 +1,10 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef FT_PRINTF_H
+#define FT_PRINTF_H
 #define BASE16_MAX "0123456789ABCDEF"
 #define BASE16_MIN "0123456789abcdef"
 #define BASE_10 "0123456789"
 
-#include "./libft/libft.h"
+#include "libft.h"
 # include <ctype.h>
 # include <fcntl.h>
 # include <limits.h>
@@ -15,6 +15,7 @@
 # include <sys/types.h>
 # include <unistd.h>
 #include <stdarg.h>
+
 int ft_numchar(const char c);
 int ft_printf_s(char *s);
 int ft_numstr(const char *str);

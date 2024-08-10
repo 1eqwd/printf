@@ -18,7 +18,7 @@ int ft_putnbr_base(long long num, char *base)
     long long   base_len;
     
     ret = 0;
-    base_len = (long long)strlen(base);
+    base_len = (long long)ft_strlen(base);
     if (num < 0)
     {
         ret += ft_numchar('-');
