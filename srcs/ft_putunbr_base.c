@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int ft_putunbr_base(unsigned long long n, char *base)
 {
@@ -25,11 +25,11 @@ int ft_putunbr_base(unsigned long long n, char *base)
     return (ret);
 }
 
- int main(int ac, char **av)
- {
-     if (ac != 2)
-        return (0);
-    unsigned long long num = atoi(av[1]);
-    printf("\n%d\n", ft_putunbr_base(num, "0123456789abcdef"));
-    return (0);
- }
+//  int main(int ac, char **av)
+//  {
+//      if (ac != 2)
+//         return (0);
+//     unsigned long long num = atoi(av[1]);
+//     printf("\n%d\n", ft_putunbr_base(num, "0123456789abcdef"));
+//     return (0);
+//  }

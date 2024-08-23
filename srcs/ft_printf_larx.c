@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
-int ft_printf_larx(unsigned long long n)
+int ft_printf_larx(unsigned int n)
 {
     int ret;
 

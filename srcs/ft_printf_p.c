@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int ft_printf_p(unsigned long long n)
 {
@@ -22,7 +22,7 @@ int ft_printf_p(unsigned long long n)
         ret += ft_numstr("(nil)");
         return (ret);
     }
-    ret += ft_numstr("0X");
+    ret += ft_numstr("0x");
     if (ret == -1)
         return (-1);
     ret += ft_putunbr_base(n, BASE16_MIN);

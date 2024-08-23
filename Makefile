@@ -37,7 +37,7 @@ AR = ar rcs
 
 $(NAME): $(OBJS)
 	$(MAKE) -C $(LIBFT_PATH)
-	cp $(LIBFT_PATH)/$(LIBFT_NAME) $(NAME)
+	mv $(LIBFT_PATH)/$(LIBFT_NAME) $(NAME)
 	$(AR) $(NAME) $(OBJS)
 
 all: $(NAME)
